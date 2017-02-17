@@ -40,7 +40,7 @@ def me():
     global delay, increment
     delay = int(request.args.get('delay'))
     increment = int(request.args.get('increment'))
-    print delay
+    #print delay
     time.sleep(delay)
     
     if os.stat("test.json").st_size != 0:
